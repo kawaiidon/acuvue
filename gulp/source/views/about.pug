@@ -1,0 +1,99 @@
+extends templates/layout
+block vars
+  - var ogtitle = '';
+  - var ogdescription = ''
+
+block content
+  main.main
+    section.section.about-section
+      .bubble.big.first(data-size="big")
+      .bubble.big.second(data-size="big")
+      .main-content
+        .about-head
+          .about-head__logo
+          .about-head__text
+            h1.about-head__title.
+              Проводишь за&nbsp;компьютером по&nbsp;несколько часов в&nbsp;день?
+            .about-head__desc.desc.
+              Иногда к&nbsp;концу дня вижн слабеет и&nbsp;может снизиться острота зрения, появляется сухость и&nbsp;дискомфорт. Что&nbsp;же делать? Сначала&nbsp;&mdash; проверка зрения в&nbsp;любой ближайшей оптике. И&nbsp;если твои характеристики проседают, в&nbsp;тяжелом лейте тебе определенно пригодится артефакт для глаз&nbsp;&mdash; такой, как линзы Acuvue&reg; Oasys 1-Day!
+        .about-text
+          .about-text__quote.
+            Вместе с&nbsp;The International 2018 стартует уникальная премия Acuvue Golden Lens! Победителя определит голосование, а&nbsp;у&nbsp;каждого из&nbsp;зрителей будет шанс выиграть свой приз&nbsp;&mdash; мощнейший игровой ноутбук
+          .about-text__desc.desc.
+            Присоединяясь к&nbsp;нам, ты&nbsp;погрузишься в&nbsp;мир топовых хайлайтов прошлых турниров и&nbsp;лучших моментов закрытой квалификации 2018 года.
+    section.section.stages-section
+      .main-content
+        .stages
+          h2.stages__title Этапы премии
+          .stages__graphic
+            .graphic
+              .graphic__wrapper
+                .graphic__item
+                  .graphic__title История The International в хайлайтах
+                  .graphic__num 1
+                  .graphic__date 11 июня — 17 июня
+                .graphic__item
+                  .graphic__title Отбор моментов с закрытых квалификаций
+                  .graphic__num 2
+                  .graphic__date 18 июня — 26 июня
+                .graphic__item
+                  .graphic__title Зрительское голосование за лучший момент
+                  .graphic__num 3
+                  .graphic__date 27 июня — 3 июля
+                .graphic__item
+                  .graphic__title Объявление победителей премии и конкурса
+                  .graphic__num 4
+                  .graphic__date 4 июля — 11 июля
+    section.section.instructions-section
+      .bubble.mid.third(data-size="mid")
+      .bubble.little.four(data-size="little")
+      .bubble.mid.five(data-size="mid")
+      .main-content
+        .instructions
+          h2.instructions__title Участвовать легко
+          .instructions__wrapper
+            .instructions__col
+              .notebook
+            .instructions__col
+              .instructions__list
+                .instructions-list
+                  .instructions-list__item
+                    .instructions-list__icon.icon-1
+                    .instructions-list__desc.
+                      Зарегистрируйся на&nbsp;сайте, используя одну из&nbsp;своих социальных сетей
+                  .instructions-list__item
+                    .instructions-list__icon.icon-2
+                    .instructions-list__desc.
+                      Смотри топовые игровые моменты из&nbsp;мира профессиональной Dota 2
+                  .instructions-list__item
+                    .instructions-list__icon.icon-3
+                    .instructions-list__desc.
+                      По&nbsp;окончании квалификаций The International 2018 отдай свой голос за&nbsp;лучший хайлайт этого года
+                  .instructions-list__item
+                    .instructions-list__icon.icon-4
+                    .instructions-list__desc.
+                      Выиграй крутой игровой ноутбук  HP OMEN 17
+    section.section.inventory-section
+      .main-content
+        .inventory
+          .inventory__wrapper#farm
+            h2.inventory__title Инвентарь
+            .inventory__info
+              .inventory__col.first
+              .inventory__col.last
+                .inventory__subtitle Сертификат на первую бесплатную пару линз Acuvue&reg; Oasys 1-Day
+                .inventory__desc Планируя катку, просмотр стрима или турнира, не&nbsp;забудь добавить в&nbsp;свой инвентарь линзы Acuvue&reg; Oasys 1-Day. Использование предмета даёт максимальное улучшение качества процесса. Пассивная способность &laquo;удобство и&nbsp;комфорт для глаз&raquo;: 100%
+                .inventory__btn
+                  a(href="https://www.acuvue.ru/freetrial?utm_source=promo&utm_medium=promo&utm_campaign=GoldenLens_Cybersport" target="_blank").btn.orange.ga-free получить бесплатно
+            .inventory__list
+              .inventory-list
+                .inventory-list__wrapper
+                  .inventory-list__item
+                    .inventory-list__icon.icon-1
+                    .inventory-list__desc Удобно  при использовании наушников
+                  .inventory-list__item
+                    .inventory-list__icon.icon-2
+                    .inventory-list__desc Технология Hydraluxe придает свойства слезы
+                  .inventory-list__item
+                    .inventory-list__icon.icon-3
+                    .inventory-list__desc Предотвращают ощущения сухости  и усталости глаз

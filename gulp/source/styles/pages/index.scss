@@ -1,0 +1,673 @@
+.main-head{
+  padding-top: 200px;
+  padding-left: 630px;
+  &__main-logo{
+    position: absolute;
+    top: 380px;
+    left: 95px;
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+    background-image: url('../images/main-logo.svg');
+  }
+  &__logo{
+    width: 350px;
+  	height: 100px;
+  	background-image: url('../images/logo.svg');
+    background-size: cover;
+  }
+  &__content{
+    width: 350px;
+  }
+  &__desc{
+    margin-top: 40px;
+  }
+  &__buttons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+  }
+  .big-link{
+    text-transform: none;
+    letter-spacing: normal;
+  }
+}
+
+.how-it-work{
+  position: relative;
+  &__btn{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    padding-right: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &:after{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 20px;
+      width: 20px;
+      background-image: url('../images/arrow-up.svg');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+  &__title{
+
+  }
+  &__list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.how-item{
+  width: 255px;
+  &__icon{
+    width: 100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    &.icon-1{
+      background-image: url('../images/how-1.svg');
+    }
+    &.icon-2{
+      background-image: url('../images/how-2.svg');
+    }
+    &.icon-3{
+      background-image: url('../images/how-3.svg');
+    }
+    &.icon-4{
+      background-image: url('../images/how-4.svg');
+    }
+  }
+  &__title{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+  }
+  &__desc{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: rgba(24, 34, 52, 0.4);
+  }
+}
+
+
+.timer{
+  &__wrapper{
+    width: 730px;
+    margin: auto;
+  }
+  &__title{
+
+  }
+  &__desc{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+  }
+  &__counter{
+    margin-top: 75px;
+  }
+  &__btn{
+    margin-top: 40px;
+    width: 194px;
+  }
+}
+
+.counter{
+  &__title{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  &__wrapper{
+    display: flex;
+    margin-top: 10px;
+  }
+  &__col{
+    margin-right: 20px;
+    width: 80px;
+    position: relative;
+    text-align: center;
+    &:after{
+      content: ":";
+      position: absolute;
+      top: -10px;
+      right: -15px;
+      font-size: 64px;
+      font-weight: 200;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.09;
+      letter-spacing: -1px;
+      text-align: center;
+      color: #e2821c;
+      animation: counter 1.5s infinite ease-in;
+      opacity: 1;
+    }
+    &:last-child{
+      margin-right: 0;
+      &:after{
+        display: none;
+      }
+    }
+  }
+  &__num{
+    font-size: 64px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.09;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  &__desc{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(24, 34, 52, 0.4);
+  }
+}
+
+@keyframes counter {
+  from{
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.inventory{
+  &__wrapper{
+
+  }
+  &__title{
+    width: 730px;
+    margin: auto;
+  }
+  &__info{
+    display: flex;
+  }
+  &__col{
+    margin-top: 40px;
+    &.first{
+      width: 635px;
+      background-image: url('../images/pack.png');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 100%;
+    }
+    &.last{
+      width: 445px;
+      margin-left: 30px;
+    }
+  }
+  &__subtitle{
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+    color: #009ca6;
+  }
+  &__desc{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+  }
+  &__btn{
+    margin-top: 40px;
+    width: 270px;
+  }
+  &__list{
+    margin-top: 40px;
+  }
+}
+
+.inventory-list{
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    &:last-child{
+      margin-left: 0;
+    }
+  }
+  &__icon{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    &.icon-1{
+      background-image: url('../images/inv-1.svg');
+    }
+    &.icon-2{
+      background-image: url('../images/inv-2.svg');
+    }
+    &.icon-3{
+      background-image: url('../images/inv-3.svg');
+    }
+  }
+  &__desc{
+    margin-left: 5px;
+    width: 180px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+  }
+}
+
+.qualification{
+  &__timeline{
+    margin-top: 60px;
+  }
+  &__timer{
+    width: 930px;
+    margin: 60px auto 0;
+    display: flex;
+  }
+  &__col{
+
+  }
+  &__desc{
+    width: 540px;
+    margin-top: 35px;
+    margin-left: 100px;
+  }
+  &__list{
+    margin-top: 40px;
+  }
+}
+
+.qualification-list{
+  display: flex;
+  justify-content: center;
+  &__item{
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+  }
+  &__icon{
+    width: 100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    &.icon-1{
+      background-image: url(../images/how-2.svg);
+    }
+    &.icon-2{
+      background-image: url(../images/how-3.svg);
+    }
+    &.icon-3{
+      background-image: url(../images/how-1.svg);
+    }
+  }
+  &__desc{
+    margin-left: 5px;
+    width: 180px;
+  }
+}
+
+.timeline{
+  &__wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin: 0 auto;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 59px;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 2px;
+      background-color: #e2821c;
+      z-index: 3;
+    }
+  }
+  &__col{
+    position: relative;
+    width: 82px;
+    height: 110px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+    &.active{
+      .timeline{
+        &__title{
+          color: inherit;
+        }
+        &__dot{
+          &:before{
+            opacity: 1;
+          }
+        }
+      }
+    }
+    &.last{
+      .timeline{
+        &__dot{
+          width: 30px;
+          height: 30px;
+          border-radius: 30px;
+          &:before{
+            height: 20px;
+            width: 20px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+  &__title{
+    height: 30px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+  }
+  &__dot{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #e7e8ea;
+    border: solid 2px #e2821c;
+    border-radius: 20px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      background-color: #e2821c;
+      opacity: 0;
+    }
+  }
+  &__day{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(24, 34, 52, 0.4);
+  }
+}
+
+.moments{
+  &__wrapper{
+    position: relative;
+  }
+  &__title{
+
+  }
+  &__list{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__main-moment{
+
+  }
+}
+
+.main-moment{
+  display: none;
+  width: 730px;
+  margin: 40px auto 100px;
+  transition: 0.3s;
+  filter: blur(10px);
+  will-change: filter;
+  padding: 0 100px;
+  // margin-bottom: 100px;
+  &.active{
+    display: block;
+  }
+  &.animated{
+    filter: blur(0px);
+  }
+  &.report{
+    margin: 40px auto 100px;
+  }
+  &__close-btn{
+
+  }
+  &__video{
+    width: 100%;
+    height: 410px;
+    border-radius: 10px;
+    // background-image: url('../images/dota-video.jpg');
+    // background-size: cover;
+    // background-position: 50% 50%;
+    overflow: hidden;
+    iframe{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__row{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  &__title{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+  }
+  &__desc{
+    margin-top: 20px;
+  }
+  &__share{
+    margin-left: auto;
+  }
+  &__voite-btn{
+    margin-right: 20px;
+  }
+}
+
+
+.moment{
+  // display: inline-block;
+  // vertical-align: top;
+  // font-size: 0;
+  width: 255px;
+  margin-bottom: 30px;
+  // margin-right: 30px;
+  &:nth-child(4n + 4){
+    margin-right: 0;
+  }
+  // &:last-child{
+  //   margin-left: 30px;
+  //   margin-right: 0;
+  // }
+  &__video{
+    position: relative;
+    width: 255px;
+    height: 140px;
+    border-radius: 5px;
+    // background-image: url('../images/dota-video.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+    &:hover{
+      &:before{
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 40px;
+      width: 40px;
+      background-image: url('../images/play.svg');
+      background-size: cover;
+      background-position: 50% 50%;
+      transition: 0.3s;
+    }
+  }
+  &__title{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+  }
+  &__info{
+    margin-top: 5px;
+    display: flex;
+  }
+  &__stat{
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: rgba(24, 34, 52, 0.4);
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      background-position: 50% 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &.views{
+      &:before{
+        height: 10px;
+        width: 25px;
+        background-image: url('../images/icon-eye.svg');
+        opacity: 0.4;
+      }
+    }
+    &.voices{
+      margin-left: 20px;
+      &:before{
+        top: 3px;
+        width: 20px;
+        height: 15px;
+        background-image: url('../images/icon-voices.svg');
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.archive-link{
+  margin-top: 70px;
+  &__wrapper{
+    display: flex;
+  }
+  &__pic{
+    position: relative;
+    width: 445px;
+    height: 310px;
+    background-image: url('../images/laptop.png');
+    background-size: cover;
+    &:before{
+      content: '';
+      position: absolute;
+      left: calc(50% - 149.5px);
+      top: 18px;
+      width: 299px;
+      height: 168px;
+      background-size: cover;
+      background-image: url('../images/dota-video-index.jpg');
+    }
+  }
+  &__text{
+    padding-top: 10px;
+    margin-left: 30px;
+    width: 445px;
+  }
+  &__title{
+    font-size: 24px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 1.25;
+   letter-spacing: -0.4px;
+   color: #009ca6;
+  }
+  &__btn{
+    margin-top: 40px;
+    width: 200px;
+    color: inherit;
+  }
+}

@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'GraphikLCG-Regular';
+  src: url('GraphikLCG-Regular.eot?#iefix') format('embedded-opentype'),  url('GraphikLCG-Regular.otf')  format('opentype'),
+	     url('GraphikLCG-Regular.woff') format('woff'), url('GraphikLCG-Regular.ttf')  format('truetype'), url('GraphikLCG-Regular.svg#GraphikLCG-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

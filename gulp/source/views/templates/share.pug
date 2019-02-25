@@ -1,0 +1,20 @@
+doctype html
+- var title = 'Project title'
+- var description = '';
+- var image = '';
+- var popupNum = 0;
+- var page_url = '/'
+block vars
+
+html.no-js(lang="")
+  head
+    meta(charset="utf-8")
+    meta(property="og:image" content=image)
+    meta(property="og:title" content=title)
+    meta(property="og:description" content=description)
+    title #{title}
+    block script
+    script.
+        setTimeout(function(){
+            window.location.href = "/";
+        });

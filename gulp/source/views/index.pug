@@ -1,0 +1,181 @@
+extends templates/layout
+block vars
+  - var ogtitle = '';
+  - var ogdescription = ''
+
+block content
+  main.main
+    section.section.main-section
+      .bubble.big.first(data-size="big")
+      .bubble.big.second(data-size="big")
+      .main-content
+        .main-head
+          .main-head__main-logo
+          .main-head__content
+            .main-head__logo
+            .main-head__desc.desc.
+              Премия за&nbsp;самый зрелищный момент квалификаций The International 2018, где все решают зрители!
+            .main-head__buttons
+              a(href="#join").main-head__btn.btn.orange участвовать
+              a(href="#how").main-head__link.big-link.js-show-how
+                span Как это работает?
+    section.section.how-to-section.js-how#how
+      .main-content
+        .how-it-work
+          .how-it-work__btn.js-hide-how Свернуть
+          h2.how-it-work__title Как это работет?
+          .how-it-work__list
+            .how-item
+              .how-item__icon.icon-1
+              .how-item__title Будь в курсе
+              .how-item__desc.
+                Вспоминай славную историю турнира и&nbsp;подпишись на&nbsp;новости премии, чтобы не&nbsp;пропустить начало отбора.
+            .how-item
+              .how-item__icon.icon-2
+              .how-item__title Смотри свежим взглядом
+              .how-item__desc.
+                Следи за&nbsp;выходом новых хайлайтов и&nbsp;определяйся со&nbsp;своим фаворитом.
+            .how-item
+              .how-item__icon.icon-3
+              .how-item__title Выбирай достойных
+              .how-item__desc.
+                По&nbsp;окончании квалификаций голосуй за&nbsp;самый впечатливший тебя момент и&nbsp;помни&nbsp;&mdash; у&nbsp;тебя есть только один голос.
+            .how-item
+              .how-item__icon.icon-4
+              .how-item__title Выиграй приз
+              .how-item__desc.
+                Готовься забрать крутой игровой ноутбук, ведь шанс его выиграть есть у&nbsp;каждого проголосовавшего!
+    section.section.qualification-section
+      .bubble.little.first(data-size="little")
+      .bubble.mid.second(data-size="mid")
+      .main-content
+        .qualification
+          h2.qualification__title Закрытые квалификации <br>The International 2018 
+          .qualification__wrapper
+            .qualification__timeline
+              .timeline
+                .timeline__wrapper
+                  .timeline__col
+                    .timeline__title Начало
+                    .timeline__dot
+                    .timeline__day 1 день
+                  .timeline__col
+                    .timeline__title
+                    .timeline__dot
+                    .timeline__day 2 день
+                  .timeline__col
+                    .timeline__title
+                    .timeline__dot
+                    .timeline__day 3 день
+                  .timeline__col
+                    .timeline__title
+                    .timeline__dot
+                    .timeline__day 4 день
+                  .timeline__col
+                    .timeline__title
+                    .timeline__dot
+                    .timeline__day 5 день
+                  .timeline__col
+                    .timeline__title
+                    .timeline__dot
+                    .timeline__day 6 день
+                  .timeline__col
+                    .timeline__title
+                    .timeline__dot
+                    .timeline__day 7 день
+                  .timeline__col.last
+                    .timeline__title Финал
+                    .timeline__dot
+                    .timeline__day 8 день
+            .qualification__timer
+              .qualification__col
+                .counter
+                  .counter__title До старта голосования
+                  .counter__wrapper
+                    .counter__col
+                      .counter__num.js-countdownDays 23
+                      .counter__desc дней
+                    .counter__col
+                      .counter__num.js-countdownHours 22
+                      .counter__desc часов 
+                    .counter__col
+                      .counter__num.js-countdownMinutes 55
+                      .counter__desc минут
+              .qualification__col
+                .qualification__desc.desc Голосование за&nbsp;лучшие хайлайты начнется 26.06.2018. Присматривайся к&nbsp;кандидатам и&nbsp;выбирай, за&nbsp;кого отдашь свой голос. Не&nbsp;проморгай момент&nbsp;&mdash; среди всех голосующих будет разыгран крутой игровой ноутбук!
+    section.section.moments-section
+      .bubble.mid.third(data-size="mid")
+      .bubble.little.four(data-size="little")
+      .main-content
+        .moments
+          .moments__wrapper
+            h2.moments__title Самые зрелищные моменты
+            .moments__main-moment
+              .main-moment.js-main-moment
+                .main-moment__close-btn
+                .main-moment__video
+                  iframe(src="" frameborder="0" allow="encrypted-media" allowfullscreen="")
+                .main-moment__row
+                  .main-moment__title
+                  .main-moment__share
+                    .social
+                      .social__title Поделиться:
+                      .social__list
+                        .social__link(data-name="vk" data-link="https://vk.com/share.php?url=" data-url="").vk.js-share
+                        .social__link(data-name="fb" data-link="https://www.facebook.com/sharer.php?u=" data-url="").fb.js-share
+                        .social__link(data-name="tw" data-link="https://twitter.com/intent/tweet?text=" data-url="").tw.js-share
+                .main-moment__row
+                  .main-moment__voite-btn.btn.orange.js-voite проголосовать
+                  .moment__stat.views 0
+                  .moment__stat.voices 0
+                .main-moment__desc.desc
+            .moments__list
+    section.section.timer-section#join
+      .bubble.little.third(data-size="mid")
+      .main-content
+        .timer
+          .timer__wrapper
+            h2.timer__title The International 2018
+            .timer__desc 18 июня - 26 июня
+            .timer__counter
+              .counter
+                .counter__title До старта голосования
+                .counter__wrapper
+                  .counter__col
+                    .counter__num.js-countdownDays 23
+                    .counter__desc дней
+                  .counter__col
+                    .counter__num.js-countdownHours 22
+                    .counter__desc часов 
+                  .counter__col
+                    .counter__num.js-countdownMinutes 55
+                    .counter__desc минут
+            .timer__btn.js-show-popup(data-show-overlay="subscribe")
+              .btn.orange Не пропусти!
+    section.section.inventory-section#farm
+      .bubble.little.six(data-size="little")
+      .bubble.big.second(data-size="big")
+      .bubble.mid.seven(data-size="mid")
+      .main-content
+        .inventory
+          .inventory__wrapper
+            h2.inventory__title Инвентарь
+            .inventory__info
+              .inventory__col.first
+              .inventory__col.last
+                .inventory__subtitle Сертификат на первую бесплатную пару линз Acuvue&reg; Oasys 1-Day
+                .inventory__desc Планируя катку, просмотр стрима или турнира, не&nbsp;забудь добавить в&nbsp;свой инвентарь линзы Acuvue&reg; Oasys 1-Day. Использование предмета даёт максимальное улучшение качества процесса. Пассивная способность &laquo;удобство и&nbsp;комфорт для глаз&raquo;: 100%
+                .inventory__btn
+                  a(href="https://www.acuvue.ru/freetrial?utm_source=promo&utm_medium=promo&utm_campaign=GoldenLens_Cybersport" target="_blank").btn.orange.ga-free получить бесплатно
+            .inventory__list
+              .inventory-list
+                .inventory-list__wrapper
+                  .inventory-list__item
+                    .inventory-list__icon.icon-1
+                    .inventory-list__desc Удобно  при использовании наушников
+                  .inventory-list__item
+                    .inventory-list__icon.icon-2
+                    .inventory-list__desc Технология Hydraluxe придает свойства слезы
+                  .inventory-list__item
+                    .inventory-list__icon.icon-3
+                    .inventory-list__desc Предотвращают ощущения сухости  и усталости глаз

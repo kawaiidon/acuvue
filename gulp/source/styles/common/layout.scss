@@ -1,0 +1,40 @@
+body, html{
+  background-color: #E7E8EA;
+  color: #182234;
+  font-family: 'GraphikLCG';
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.main-content{
+  position: relative;
+  z-index: 35;
+  margin: auto;
+  width: 1110px;
+}
+
+.main{
+  padding-bottom: 340px;
+  transition: 0.5s;
+  will-change: filter;
+  // filter: blur(5px);
+  // &.loaded{
+  //   filter: blur(0px);
+  // }
+}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+}}

@@ -1,0 +1,168 @@
+.history{
+  &__wrapper{
+    margin: auto;
+    width: 730px;
+  }
+  &__video{
+    width: 730px;
+    height: 410px;
+    object-fit: contain;
+    border-radius: 10px;
+    overflow: hidden;
+    iframe{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__views{
+    position: relative;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    box-sizing: border-box;
+    padding-left: 25px;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 20px;
+      height: 12px;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-image: url('../images/icon-eye.svg');
+    }
+  }
+  &__info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__desc{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(24, 34, 52, 0.1);
+  }
+}
+
+.history-item{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(24, 34, 52, 0.1);
+    &.first{
+      position: relative;
+      padding-top: 60px;
+      padding-bottom: 20px;
+    }
+    &__float-year{
+      position: absolute;
+      left: -100px;
+      top: 60px;
+      font-size: 90px;
+      font-weight: 200;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.89;
+      letter-spacing: -5px;
+      color: #e2821c;
+      // transition: 0.2s;
+      // will-change: top, left, position;
+    }
+  &__year{
+    font-size: 90px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.89;
+    letter-spacing: -5px;
+    color: #e2821c;
+  }
+  &__col{
+    margin-top: 10px;
+    margin-left: 10px;
+    &:last-child{
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+  &__subtitle{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    color: rgba(24, 34, 52, 0.4);
+  }
+  &__team{
+    position: relative;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+    padding-left: 40px;
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 30px;
+      width: 30px;
+      background-position: 50% 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &.navi{
+      &:before{
+        background-image: url('../images/navi.png');
+      }
+    }
+    &.inv{
+      &:before{
+        background-image: url('../images/invictus.png');
+      }    }
+    &.alliance{
+      &:before{
+        background-image: url('../images/alliance.png');
+      }
+    }
+    &.bee{
+      &:before{
+        background-image: url('../images/newbee.png');
+      }
+    }
+    &.evil{
+      &:before{
+        background-image: url('../images/evil.png');
+      }
+    }
+    &.wings{
+      &:before{
+        background-image: url('../images/wings.png');
+      }
+    }
+    &.liquid{
+      &:before{
+        background-image: url('../images/liquid.png');
+      }
+    }
+  }
+  &__prize{
+    margin-right: auto;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+  }
+}
